@@ -3,7 +3,7 @@
     text-align: center;
     margin-top: 5px;
     margin-left: auto;
-    width: 740px;
+    width: auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -11,20 +11,6 @@
     background-color: #f9f9f9;
     height: 100vh;
 }
-/* .my-div {
-  margin-bottom: 20px;
-  text-align: center;
-  margin-top: 5px;
-  margin-left: auto;
-  width: 740px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  background-color: #f9f9f9;
-  min-height: 80vh;
-  transition: margin-left 0.3s;
-} */
 
 .sidebar-toggle {
   position: absolute;

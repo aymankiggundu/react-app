@@ -10,14 +10,22 @@
   z-index: 1000;
   box-shadow: 2px 0 8px rgba(0,0,0,0.08);
   text-emphasis-color: #222e3c;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar.closed {
   transform: translateX(-100%);
 }
 
-.sidebar ul {
-  list-style: circle;
+.logoSection {
+  flex-shrink: 0;
+}
+
+.iconList {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -50,13 +58,6 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.logoSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 24px 0 12px 0;
-}
-
 .logo {
   width: 48px;
   height: 48px;
@@ -70,12 +71,6 @@
   font-size: 1.1rem;
   margin-bottom: 16px;
   text-align: center;
-}
-
-.iconList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .icon {
