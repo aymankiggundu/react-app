@@ -7,7 +7,7 @@ interface Props {
      onClock?: () => void;
 }
 
-const Button = ({children,onClick,color='react'}: Props) => {
+const Button = ({children,onClick, color='secondary'}: Props) => {
   return (
     <button className ={"btn btn- "+ color} onClick={onClick}>{children}</button>
   )
