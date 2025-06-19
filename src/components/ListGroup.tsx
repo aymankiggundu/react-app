@@ -1,12 +1,23 @@
-function ListGroup( ){
-    const items = ["kenya" , "tanzania", "uganda", "africa","tanzania", "kenya", "uganda", "africa"];
+import { useState } from "react";
+
+interface ListGroupProps {
+    items: string[];
+    heading: string;
+}
+
+function ListGroup({items,heading}: ListGroupProps) {
+    const [selectedIndex, setselectedIndex] = useState(-1);
+    
     return (
     <div>
-        <h1>List of items</h1>
+        <h1>{heading}</h1>
         {items.length === 0 && <p>No items found</p>}
         <ul className="list-group">
             {items.map((item, index) => (
-                <li key={index} onClick={(event) => console.log(event)} >
+                <li 
+                className={selectedIndex === index ? 'list-group-item active' : 'list-group-item'}
+                key={item} 
+                onClick={() => {setselectedIndex(index)}}>
                     {item}
                 </li>
             ))}
