@@ -42,7 +42,7 @@
 }
 
 .sidebar li.active, .sidebar li:hover {
-  background: #3a4a5d;
+  background: #961903;
 }
 
 .sidebar-toggle {
@@ -71,7 +71,7 @@
 }
 
 .companyName {
-  color: #222e3c;
+  color: #912403;
   font-weight: bold;
   font-size: 1.1rem;
   margin-bottom: 0;
